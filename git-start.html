@@ -8,7 +8,7 @@ color: white;
 font-family: Courier;
 background-color: black;
 margin: 20px;
-padding 20px;
+padding: 20px;
 }
 
 </style>
@@ -26,25 +26,39 @@ padding 20px;
 <h3>We will discuss second type and strat work from your local server (computer), then push (uploading) your code to Git repository (remote server)</h3>
 <ol>
         <li>Open a new folder where you want to create your local server copy.</li>
-	<li>Open terminal at this folder </li>
+	<li>Open terminal at this folder</li>
 	<li><i>git init</i></li>
 	<li><i>git clone</i>(paste https url)</li>
-	<li>starting developing</li>
+	<li>start developing</li>
+	<li>Check repository status <i>git status</i></li>
 	<li>When you feel its time to save your work to local server, run commit command</li>
 	<li><i>git add .</i> '.' for all files or give file name</li>
 	<li><i>git commit -m "your comment on commit"</i></li>
 	<li>Finally after commit,its time to push your code to github repository</li>
 	<li><i>git push origin master</i></li>
 </ol>
-
 <h3> When you want to work on 'Branch'(copy of master). Create branch <i>git branch bebugMe</i> do commit/push on branch named bebugMe the merge your code to master</h3>
 <ol>
 	<li><i>git checkout master</i></li>
 </ol>
-
-you can generate pull request on master to merge code. 
-<i>git pull</i>
-<i>git push</i>
-
+You can do a pull request for downloading latest repozitory (any changes made on remote server).
+<div>
+<ul>
+<li><i>git pull</i></li>
+<li><i>git commit -m "update css file"</i></li>
+<li><i>git push</i></li>
+</ul>
+</div>
+<h4>Update outdated branch against master repository</h4>
+<p>
+	<ul>
+		<li><i>git checkout myBranch</i></li>
+		<li><i>git pull origin master</i></li>
+		<li><i>git commit -m "update myBranch to master"</i></li>
+		<li><i>git push</i></li>
+		<li>Check status <i>git status</i></li>
+	</ul>
+	
+</p>
 </body>
 </html>
